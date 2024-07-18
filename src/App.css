@@ -1,0 +1,30 @@
+/* Webpixels CSS */
+/* Utility and component-centric Design System based on Bootstrap for fast, responsive UI development */
+/* URL: https://github.com/webpixels/css */
+
+
+
+@import url(https://unpkg.com/@webpixels/css@1.1.5/dist/index.css);
+
+/* Bootstrap Icons */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.4.0/font/bootstrap-icons.min.css");
+
+/*  changes */
+.navbar-vertical.navbar-light .navbar-nav > .nav-item > .nav-link:hover {
+  background-color: rgba(208, 198, 254, 1);
+  border-radius:15px;
+}
+.navbar-vertical.navbar-light .navbar-nav > .nav-item > .nav-link.active {
+  background-color: rgba(208, 198, 254, 1);
+  border-radius:15px;
+}
+
+/* card */
+.bg-soft-success {
+  background-color: #ccf5e7 !important;
+  border-radius: 15px;
+}
+.me-1{
+  color: #000;
+  font-size: 15px;
+}

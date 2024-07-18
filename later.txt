@@ -1,0 +1,181 @@
+1. in navabr i have the contact banner -> which i will update in the future to show the followers
+2. add the function of saving the post
+
+
+remaining work:
+1. profile pic edit
+2. comment modal add link to profile
+3. same 3 point with post area
+4. bug in comment increment point
+3.there is error in the div
+import React from "react";
+
+export default function YourPost() {
+  return (
+    <>
+      <div className="card shadow border-0 mb-7">
+        <div className="card-header">
+          <h5 className="mb-0">Your Post</h5>
+        </div>
+        <div className="row">
+        <div
+        className="card col-sm-4"
+        style={{
+          maxWidth: "23rem",
+          backgroundColor: "#f5f9fc",
+          margin: "20px",
+          border: "2px solid #ECEEF3",
+        }}
+      >
+        {/* Header */}
+        <div className="postHeader">
+          <a href="/" className="nav-link d-flex align-items-center">
+            <div className="me-4">
+              <div className="position-relative d-inline-block text-white">
+                <img
+                  alt="Pic"
+                  src="https://images.unsplash.com/photo-1548142813-c348350df52b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=3&w=256&h=256&q=80"
+                  className="avatar rounded-circle postProfilePic"
+                  style={{ width: "58px", height: "58px" }}
+                />
+                <span className="position-absolute bottom-2 end-2 transform translate-x-1/2 translate-y-1/2 border-2 border-solid border-current w-3 h-3 bg-success rounded-circle"></span>
+              </div>
+            </div>
+            <div>
+              <span
+                className="d-block text-sm font-semibold"
+                style={{ fontSize: "1rem" }}
+              >
+                Marie Claire
+              </span>
+              <span className="d-block text-xs text-muted font-regular">
+                Paris, FR
+              </span>
+            </div>
+          </a>
+        </div>
+        {/* Body */}
+        <div className="card-body">
+          <h5 className="card-title">Card title</h5>
+          <p className="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+        </div>
+        {/* img Box */}
+        <div className="imgBox container">
+          <img
+            src="./img/Dashboard/ss.png"
+            className="card-img-top"
+            style={{ borderRadius: "15px" }}
+            alt="..."
+          />
+        </div>
+        {/* card-bottom */}
+        <div
+          className="container card-bottom"
+          style={{ margin: "13px 0px 11px 0px" }}
+        >
+          <img
+            src="./img/Dashboard/like.png"
+            className="card-img-top img-fluid"
+            alt="..."
+            style={{ width: "30px", height: "33px", marginRight: "15px" }}
+          />
+          <img
+            src="./img/Dashboard/comment.png"
+            className="card-img-top"
+            alt="..."
+            style={{ width: "30px", height: "35px" }}
+          />
+        </div>
+      </div>
+        
+      
+        </div>
+        {/* <div className="card-footer border-0 py-5">
+          <span className="text-muted text-sm">
+            Showing 10 items out of 250 results found
+          </span>
+        </div> */}
+      </div>
+    </>
+  );
+}
+//  how i will bring data and append them and view them
+
+
+
+
+
+
+import React from 'react'
+import './style.css'
+export default function Profile() {
+  return (
+  <>
+  <header>
+
+<div className="container">
+
+    <div className="profile">
+
+        <div className="profile-image">
+
+            <img src="https://images.unsplash.com/photo-1513721032312-6a18a42c8763?w=152&h=152&fit=crop&crop=faces" alt=""/>
+
+        </div>
+
+        <div className="profile-user-settings">
+
+            <h1 className="profile-user-name">janedoe_</h1>
+
+            <button className="btn profile-edit-btn">Edit Profile</button>
+
+            <button className="btn profile-settings-btn" aria-label="profile settings"><i className="fas fa-cog" aria-hidden="true"></i></button>
+
+        </div>
+
+        <div className="profile-stats">
+
+            <ul>
+                <li><span className="profile-stat-count">164</span> posts</li>
+                <li><span className="profile-stat-count">188</span> followers</li>
+                <li><span className="profile-stat-count">206</span> following</li>
+            </ul>
+
+        </div>
+
+    </div>
+    {/* End of profile section */}
+
+</div>
+{/* End of container */}
+
+</header>
+
+{/* <main> */}
+
+{/* <div className="container">
+
+    <div className="gallery">
+       
+       
+
+    </div>
+
+</div> */}
+{/* End of container */}
+
+{/* </main> */}
+  </>
+  )
+}

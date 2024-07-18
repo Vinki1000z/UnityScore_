@@ -1,0 +1,15 @@
+1. Need to add the functionality of edit in next update
+2. likes on the comments
+3. allProfileByName see it later for understanding
+4. if userinfo does bot work for the viewing the own profike then make other route (i had made it)
+5. if some one delete the post score will be deducted
+6.     user.achievements = achievements
+      .filter(achievement => newScore >= achievement.score)
+      .map(achievement => ({ 
+        title: achievement.title, 
+        description: achievement.description, 
+        date: new Date() 
+      }));
+
+    see this also
+    7. in updating the achievemnt s also add the scores in it
